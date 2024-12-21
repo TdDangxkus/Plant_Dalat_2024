@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Chào</title>
+    <style>
+        /* Toàn bộ trang */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Phần loading screen */
+        .loading-screen {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #08AEEA;
+background-image: linear-gradient(0deg, #08AEEA 0%, #2AF598 100%);
+
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            flex-direction: column;
+            text-align: center; /* Căn giữa nội dung */
+        }
+
+        /* Hình ảnh */
+        .loading-img {
+            max-width: 100%; /* Giới hạn kích thước tối đa cho ảnh */
+            max-height: 80%;
+            width: auto;
+            height: auto;
+        }
+
+        /* Responsive cho hình ảnh */
+        @media (max-width: 600px) {
+            .loading-img {
+                max-width: 80%; /* Giảm kích thước ảnh trên màn hình nhỏ */
+                max-height: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Phần loading screen -->
+    <div class="loading-screen" id="loading-screen">
+        <img src="/img/panda_remove.png" alt="Loading..." class="loading-img"> <!-- Thêm hình ảnh vào đây -->
+    </div>
+
+    <script>
+        // Chờ vài giây trước khi ẩn màn hình loading và chuyển hướng đến trang khác
+        setTimeout(function() {
+            // Ẩn màn hình loading
+            document.getElementById('loading-screen').style.display = 'none';
+            
+            // Chuyển hướng tới trang khác sau khi ẩn loading
+            window.location.href = "day1.html"; // Thay đổi thành URL của trang bạn muốn chuyển tới
+        }, 3000); // Thời gian chờ màn hình loading hiển thị (3 giây)
+    </script>
+</body>
+</html>
