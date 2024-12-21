@@ -5,132 +5,150 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Du lịch Đà Lạt - Ngày 2</title>
     <style>
-    body {
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        margin: 20px;
-        background-color: #FFDEE9;
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 20px;
+            background-color: #FFDEE9;
 background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%);
 
-        color: #333;
-    }
-    table {
-        width: 100%;
-        border-collapse: collapse;
-        margin: 20px 0;
-        background-color: #fff;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        border-radius: 8px;
-        overflow: hidden;
-    }
-    th, td {
-        border: 1px solid #ddd;
-        padding: 12px;
-        text-align: left;
-    }
-    th {
-        background-color: #0071c2;
-        color: #fff;
-        font-size: 16px;
-    }
-    td {
-        font-size: 14px;
-    }
-    h1 {
-        text-align: center;
-        margin-bottom: 20px;
-        color: #0071c2;
-        text-transform: uppercase;
-    }
-    a {
-        color: #0071c2;
-        text-decoration: none;
-    }
-    a:hover {
-        text-decoration: underline;
-    }
-    .section-title {
-        background-color: #f4f4f4;
-        font-weight: bold;
-        text-align: center;
-        padding: 8px;
-        border: 1px solid #ddd;
-    }
-    .total {
-        font-weight: bold;
-        text-align: center;
-        background-color: #f4f4f4;
-    }
-    .navigation {
-        text-align: center;
-        margin-top: 20px;
-    }
-    .nav-button {
-        background-color: #08AEEA;
+            color: #333;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #0071c2;
+            color: #fff;
+            font-size: 16px;
+        }
+        td {
+            font-size: 14px;
+            font-weight: 400;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #0071c2;
+            text-transform: uppercase;
+        }
+        a {
+            color: #0071c2;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .section-title {
+            background-color: #f4f4f4;
+            font-weight: bold;
+            text-align: center;
+            padding: 8px;
+            border: 1px solid #ddd;
+        }
+        .total {
+            font-weight: bold;
+            text-align: center;
+            background-color: #f4f4f4;
+        }
+        .navigation {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .nav-button {
+            background-color: #08AEEA;
 background-image: linear-gradient(0deg, #08AEEA 0%, #2AF598 100%);
 
-        color: #fff;
-        padding: 10px 20px;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        font-size: 14px;
-        margin: 5px;
-    }
-    .nav-button:hover {
-        background-color: #005fa3;
-    }
-    .note {
-        background-color: #ffffff00;
-        font-size: 14px;
-        padding: 15px;
-        border-radius: 5px;
-        margin-bottom: 20px;
-        text-align: center;
-        color: #ff0c0c;
-    }
-
-
-    /* Media Queries for Responsive Design */
-    @media (max-width: 768px) {
-        h1 {
-            font-size: 24px;
-        }
-        table, .navigation {
-            font-size: 12px;
-        }
-        .nav-button {
-            font-size: 12px;
-            padding: 8px 16px;
-        }
-        th, td {
-            padding: 10px;
-        }
-        .section-title {
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
             font-size: 14px;
+            margin: 5px;
         }
-    }
-
-    @media (max-width: 480px) {
-        h1 {
-            font-size: 20px;
+        .nav-button:hover {
+            background-color: #005fa3;
         }
-        table, .navigation {
-            font-size: 10px;
-        }
-        .nav-button {
-            font-size: 10px;
-            padding: 6px 12px;
-        }
-        th, td {
-            padding: 8px;
-        }
-        .section-title {
-            font-size: 12px;
+        .note {
+            background-color: #ffffff00;
+            font-size: 14px;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            text-align: center;
+            color: #ff0c0c;
         }
 
-    }
 
-</style>
+        /* Media Queries for Responsive Design */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 24px;
+            }
+            table, .navigation {
+                font-size: 12px;
+            }
+            .nav-button {
+                font-size: 12px;
+                padding: 8px 16px;
+            }
+            th, td {
+                padding: 10px;
+            }
+            .section-title {
+                font-size: 14px;
+            }
+            .note {
+            background-color: #ffffff00;
+            font-size: 14px;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            text-align: center;
+            color: #ff0c0c;
+        }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 20px;
+            }
+            table, .navigation {
+                font-size: 10px;
+            }
+            .nav-button {
+                font-size: 10px;
+                padding: 6px 12px;
+            }
+            th, td {
+                padding: 8px;
+            }
+            .section-title {
+                font-size: 12px;
+            }
+            .note {
+            background-color: #ffffff00;
+            font-size: 14px;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            text-align: center;
+            color: #ff0c0c;
+        }
+        }
+
+    </style>
 </head>
 <body>
     <h1>Du lịch Đà Lạt - Ngày 2: 27/12/2024</h1>
@@ -156,19 +174,26 @@ background-image: linear-gradient(0deg, #08AEEA 0%, #2AF598 100%);
             </tr>
             <tr>
                 <td style="color: red;">3:30</td>
-                <td><strong>Đi săn mây:</strong> Đồi chè Cầu Đất (quán Cầu Gỗ Bình Minh) <br><em>Địa chỉ:</em> Đồi chè Cầu Đất <br><a href="https://s.net.vn/09w5">Link xem hướng dẫn</a></td>
+                <td><strong>Đi săn mây:</strong> Đồi chè Cầu Đất (quán Cầu Gỗ Bình Minh) <br><em>Địa chỉ:</em> Đồi chè Cầu Đất 
+                    <br><a href="https://s.net.vn/09w5">Link xem hướng dẫn</a>
+                    <br> <a href="https://maps.app.goo.gl/ejUdJtGc3wQow3b99">Vị trí</a>
+                </td>
                 <td>120k / người</td>
                 <td>960k</td>
             </tr>
             <tr>
                 <td style="color: red;">7:00</td>
-                <td><strong>Ăn sáng:</strong> Phở Bát Đàn <br><em>Địa chỉ:</em> Số 4 Hoàng Văn Thụ</td>
+                <td><strong>Ăn sáng:</strong> Phở Bát Đàn <br><em>Địa chỉ:</em> Số 4 Hoàng Văn Thụ
+                    <br> <a href="https://maps.app.goo.gl/XGzjTapmpsmfm2226">Vị trí</a>
+                </td>
                 <td>50k-60k / tô</td>
                 <td>400k-480k</td>
             </tr>
             <tr>
                 <td style="color: red;">8:00</td>
-                <td><strong>Đi chơi:</strong> The Winder-Nest Ta Nung <br><em>Địa chỉ:</em> Thôn 3, Đà Lạt, Lâm Đồng <br><em>(Google tên quán)</em></td>
+                <td><strong>Đi chơi:</strong> The Winder-Nest Ta Nung <br><em>Địa chỉ:</em> Thôn 3, Đà Lạt, Lâm Đồng <br><em>
+                     <a href="https://maps.app.goo.gl/M671j8YG562gVXZM6">Vị trí</a>
+                </em></td>
                 <td>100k / ly nước</td>
                 <td>800k</td>
             </tr>
@@ -177,13 +202,21 @@ background-image: linear-gradient(0deg, #08AEEA 0%, #2AF598 100%);
             </tr>
             <tr>
                 <td style="color: red;">12:00</td>
-                <td><strong>Ăn trưa:</strong> Nem nướng Tân Long <br><em>Địa chỉ:</em> 290 Bùi Thị Xuân, Đà Lạt <br><em>(11:00 - 21:00)</em> <br><a href="https://s.net.vn/3lE5">Link xem hướng dẫn</a></td>
+                <td><strong>Ăn trưa:</strong> Nem nướng Tân Long <br><em>Địa chỉ:</em> 290 Bùi Thị Xuân, Đà Lạt <br><em>(11:00 - 21:00)</em> 
+                    <br><a href="https://s.net.vn/3lE5">Link xem hướng dẫn</a>
+                    <br> <a href="https://maps.app.goo.gl/Dp2okjdKpJyJDGTt7">Vị trí</a>
+                    
+                </td>
                 <td>40k / phần</td>
                 <td>360k</td>
             </tr>
             <tr>
                 <td style="color: red;">14:00</td>
-                <td><strong>Đi chơi:</strong> Dantala Waterfall <br><em>Địa chỉ:</em> QL20 Đèo Prenn, Phường 3, Đà Lạt, Lâm Đồng <br><em>(Google tên quán)</em></td>
+                <td><strong>Đi chơi:</strong> Dantala Waterfall <br><em>Địa chỉ:</em> QL20 Đèo Prenn, Phường 3, Đà Lạt, Lâm Đồng 
+                    <br><em>
+                        <a href="https://maps.app.goo.gl/HxiuHCbMRmcahjjbA">Vị trí</a>
+
+                    </em></td>
                 <td>250k / vé người lớn</td>
                 <td>2tr</td>
             </tr>
