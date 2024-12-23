@@ -20,8 +20,10 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background-color: #08AEEA;
-background-image: linear-gradient(0deg, #08AEEA 0%, #2AF598 100%);
+            background-color: #88ff00;
+            background-image: linear-gradient(0deg, #e3e3e3 0%, #c4ff4e 100%);
+
+         
 
             color: white;
             display: flex;
@@ -38,7 +40,54 @@ background-image: linear-gradient(0deg, #08AEEA 0%, #2AF598 100%);
             max-height: 80%;
             width: auto;
             height: auto;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
         }
+        #text_title {
+            font-size: 20px;
+            font-weight: 600;
+            color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2px;
+            position: absolute;
+            top: 60%;
+            left: 50%;
+            transform: translate(-50%, 0%);
+        }
+
+        #text_title span {
+            display: inline-block;
+            animation: bounce 1.5s ease-in-out infinite;
+        }
+
+        @keyframes bounce {
+            0%, 100% {
+            transform: translateY(0);
+            }
+            50% {
+            transform: translateY(-20px);
+            }
+        }
+
+        /* Tạo độ trễ cho từng chữ */
+        #text_title span:nth-child(1) { animation-delay: 0s; }
+        #text_title span:nth-child(2) { animation-delay: 0.1s; }
+        #text_title span:nth-child(3) { animation-delay: 0.2s; }
+        #text_title span:nth-child(4) { animation-delay: 0.3s; }
+        #text_title span:nth-child(5) { animation-delay: 0.4s; }
+        #text_title span:nth-child(6) { animation-delay: 0.5s; }
+        #text_title span:nth-child(7) { animation-delay: 0.6s; }
+        #text_title span:nth-child(8) { animation-delay: 0.7s; }
+        #text_title span:nth-child(9) { animation-delay: 0.8s; }
+        #text_title span:nth-child(10) { animation-delay: 0.9s; }
+        #text_title span:nth-child(11) { animation-delay: 1s; }
+        #text_title span:nth-child(12) { animation-delay: 1.1s; }
+        #text_title span:nth-child(13) { animation-delay: 1.2s; }
+        #text_title span:nth-child(14) { animation-delay: 1.3s; }
+        #text_title span:nth-child(15) { animation-delay: 1.4s; }
 
         /* Responsive cho hình ảnh */
         @media (max-width: 600px) {
@@ -47,12 +96,31 @@ background-image: linear-gradient(0deg, #08AEEA 0%, #2AF598 100%);
                 max-height: 80%;
             }
         }
+
+
     </style>
 </head>
 <body>
     <!-- Phần loading screen -->
     <div class="loading-screen" id="loading-screen">
-        <img src="panda_remove.png" alt="Loading..." class="loading-img"> <!-- Thêm hình ảnh vào đây -->
+        <img src="pandacute-removebg-preview.png" alt="Loading..." class="loading-img"> 
+        <p id="text_title">
+            <span>Đ</span>
+            <span>ợ</span>
+            <span>i</span>
+            <span> </span>
+            <span>m</span>
+            <span>ộ</span>
+            <span>t</span>
+            <span> </span>
+            <span>c</span>
+            <span>h</span>
+            <span>ú</span>
+            <span>t</span>
+            <span> </span>
+            <span>ạ</span>
+            <span>!</span>
+          </p>
     </div>
 
     <script>
